@@ -6,16 +6,14 @@ let arr2 = [true,"green","where",12,56];
 console.log(arr2.slice(-1));
 
 //js program that joins array.
-const myPests = ("Cow","Bird","Snake","Dog");
-let animals =  myPests.toString();
-console.log({animals});
+let myPets = ["Cow","Bird","Snake","Dog"];
+console.log(myPets.join());
 
 //js script to sort the array.
-const arr3 = [-5,9,5,3,2,-3,6,8.4,-1];
-let num = arr3.sort();
-console.log({num});
+let arr3 = [-5,9,5,3,2,-3,6,8.4,-1];
+console.log(arr3.sort(function(a,b){return a - b}));
 
 //js script to sort the array.
 let word = ("renniw");
-let k = word.sort();
+let k = word.split('').sort().join('');
 console.log({k}); 
